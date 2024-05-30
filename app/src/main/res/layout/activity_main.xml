@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/inputGuess"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:hint="Guess the number"
+        android:inputType="text"
+        android:maxLength="999999"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/button_background"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitButton2"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:background="@drawable/button_background"
+        android:text="Get third flag"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:text="Good luck with the CTF"
+        android:textSize="18sp"/>
+
+</LinearLayout>
